@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 #grid-container {
@@ -57,6 +58,14 @@ html, body {
     overflow-y: scroll !important;
 }
 
+p {
+    width: 100%;
+}
+
+.table {
+    width: 75%;
+}
+
 pre {
     padding: 10px;
     background: whitesmoke;
@@ -70,4 +79,9 @@ pre {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 20px;
+}
+
+section {
+    width: 75%;
+    border-bottom: 2px solid gray;
 }
