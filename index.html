@@ -13,58 +13,201 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header <h2>-->
+    <div id="grid-container">
+        <div id="h-container">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" width="50px"
+                height="50px" alt="">
+            <h1>Bootstrap Documentation</h1>
+        </div>
+        <!-- Nav -->
+        <div id="n-container">
+            <nav id="navbar">
+                <header></header>
+                <a class="nav-link" href="#introduction">Introduction</a>
+                <a class="nav-link" href="#quick-start">Quick Start</a>
+                <a class="nav-link" href="#responsive">Responsive Break Points</a>
+                <a class="nav-link" href="#typography">Typography</a>
+                <a class="nav-link" href="#spacing">Spacing</a>
+                <a class="nav-link" href="#icons">Icons</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#license">License</a>
+            </nav>
+        </div>
+        <!-- Main  -->
+        <div id="m-container">
+            <main id="main-doc">
+                <!-- Section 1 -->
+                <section class="main-section" id="introduction">
+                    <header>
+                        <h2>Introduction</h2>
+                    </header>
+                    <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end
+                        component library.</p>
 
-    <!-- Nav -->
-    <nav id="navbar">
-        <header></header>
-        <a class="nav-link" href="#introduction">Introduction</a>
-        <a class="nav-link" href="#installation">Installation</a>
-        <a class="nav-link" href="#responsive">Responsive Break Points</a>
-        <a class="nav-link" href="#typography">Typography</a>
-        <a class="nav-link" href="#spacing">Spacing</a>
-        <a class="nav-link" href="#icons">Icons</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#license">License</a>
-    </nav>
-    <!-- Main  -->
-    <main id="main-doc">
-        <!-- Section 1 -->
-        <section class="main-section" id="introduction">
-            <header>Introduction</header>
-        </section>
-        <!-- Section 2 -->
-        <section class="main-section" id="installation">
-            <header>Installation</header>
-        </section>
-        <!-- Section 3 -->
-        <section class="main-section" id="responsive">
-            <header>Responsive Break Points</header>
-        </section>
-        <!-- Section 4 -->
-        <section class="main-section" id="typography">
-            <header>Typography</header>
-        </section>
-        <!-- Section 5 -->
-        <section class="main-section" id="spacing">
-            <header>Spacing</header>
-        </section>
-        <!-- Section 6 -->
-        <section class="main-section" id="icons">
-            <header>Icons</header>
-        </section>
-        <!-- Section 7 -->
-        <section class="main-section" id="about">
-            <header>About</header>
-        </section>
-        <!-- Section 8 -->
-        <section class="main-section" id="license">
-            <header>License</header>
-        </section>
-    </main>
+                    <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype
+                        your ideas or build your entire app with our Sass variables and mixins, responsive grid system,
+                        extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                </section>
+                <hr>
+                <!-- Section 2 -->
+                <section class="main-section" id="quick-start">
+                    <header>
+                        <h2>Quick Start</h2>
+                    </header>
+                    <p>Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the
+                        folks at StackPath. Using a package manager or need to download the source files? Head to the
+                        downloads page.</p>
 
-    <!-- Footer -->
+                    <h4>CSS</h4>
 
+                    <p>Copy-paste the stylesheet <code> &lt;link&gt; </code> into your
+                        <code> &lt;head&gt; </code> before all other stylesheets to load our CSS.</p>
+
+                    <pre><code>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"&gt;</code></pre>
+
+                    <h4>JS</h4>
+
+                    <p>Many of our components require the use of JavaScript to function. Specifically, they require
+                        jQuery, Popper.js, and our own JavaScript plugins. Place the following <code>&lt;script&gt;</code>s
+                        near the end of your pages, right before the closing <code>&lt;body&gt;</code> tag, to enable
+                        them. jQuery must come first, then Popper.js, and then our JavaScript plugins.</p>
+
+                    <p>We use jQuery’s slim build, but the full version is also supported.</p>
+
+                    <pre><code>
+                                &lt;script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">&lt;/script&gt;<br>
+                                &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">&lt;/script&gt;<br>
+                                &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">&lt;/script&gt;
+                        </code></pre>
+                </section>
+                <hr>
+                <!-- Section 3 -->
+                <section class="main-section" id="responsive">
+                    <header>
+                        <h2>Responsive Break Points</h2>
+                    </header>
+                    <p>Since Bootstrap is developed to be mobile first, we use a handful of media queries to create
+                        sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on
+                        minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+
+                    <p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass
+                        files for our layout, grid system, and components.</p>
+
+                    <pre><code>
+                                // Extra small devices (portrait phones, less than 576px) <br>
+                                // No media query for `xs` since this is the default in Bootstrap <br>
+                                <br>
+                                // Small devices (landscape phones, 576px and up) <br>
+                                <span style="color: lightblue">@media</span> (min-width: <span style="color: red">576px</span>) { ... } <br>
+                                <br>
+                                // Medium devices (tablets, 768px and up) <br>
+                                <span style="color: lightblue">@media</span> (min-width: <span style="color: red">768px</span>) { ... } <br>
+                                <br>
+                                // Large devices (desktops, 992px and up) <br>
+                                <span style="color: lightblue">@media</span> (min-width: <span style="color: red">992px</span>) { ... } <br>
+                                <br>
+                                // Extra large devices (large desktops, 1200px and up) <br>
+                                <span style="color: lightblue">@media</span> (min-width: <span style="color: red">1200px</span>) { ... } <br>
+                        </code></pre>
+                </section>
+                <hr>
+                <!-- Section 4 -->
+                <section class="main-section" id="typography">
+                    <header>
+                        <h2>Typography</h2>
+                    </header>
+                    <p>Bootstrap sets basic global display, typography, and link styles. When more control is needed,
+                        check out the textual utility classes.</p>
+                    <h4>Headings</h4>
+                    <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
+
+                    <table class="table">
+                        <thead>
+                            <th style="width: 30%">Heading</th>
+                            <th>Example</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span style="color: red">&lt;h1&gt;&lt/h1&gt;</span></td>
+                                <td>
+                                    <h1>h1. Bootstrap Heading</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: red">&lt;h2&gt;&lt/h2&gt;</span></td>
+                                <td>
+                                    <h2>h2. Bootstrap Heading</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: red">&lt;h3&gt;&lt/h3&gt;</span></td>
+                                <td>
+                                    <h3>h3. Bootstrap Heading</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: red">&lt;h4&gt;&lt/h4&gt;</span></td>
+                                <td>
+                                    <h4>h4. Bootstrap Heading</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: red">&lt;h5&gt;&lt/h5&gt;</span></td>
+                                <td>
+                                    <h5>h5. Bootstrap Heading</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span style="color: red">&lt;h6&gt;&lt/h6&gt;</span></td>
+                                <td>
+                                    <h6>h6. Bootstrap Heading</h6>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code>
+                           <span style="color:lightblue">&lt;h1></span>h1. Bootstrap heading<span style="color:lightblue">&lt;/h1&gt;</span><br>
+                           <span style="color:lightblue">&lt;h2></span>h2. Bootstrap heading<span style="color:lightblue">&lt;/h2&gt;</span><br>
+                           <span style="color:lightblue">&lt;h3></span>h3. Bootstrap heading<span style="color:lightblue">&lt;/h3&gt;</span><br>
+                           <span style="color:lightblue">&lt;h4></span>h4. Bootstrap heading<span style="color:lightblue">&lt;/h4&gt;</span><br>
+                           <span style="color:lightblue">&lt;h5></span>h5. Bootstrap heading<span style="color:lightblue">&lt;/h5&gt;</span><br>
+                           <span style="color:lightblue">&lt;h6></span>h6. Bootstrap heading<span style="color:lightblue">&lt;/h6&gt;</span><br>
+                    </code></pre>
+                </section>
+                <hr>
+                <!-- Section 5 -->
+                <section class="main-section" id="spacing">
+                    <header>
+                        <h2>Spacing</h2>
+                    </header>
+                </section>
+                <hr>
+                <!-- Section 6 -->
+                <section class="main-section" id="icons">
+                    <header>
+                        <h2>Icons</h2>
+                    </header>
+                </section>
+                <hr>
+                <!-- Section 7 -->
+                <section class="main-section" id="about">
+                    <header>
+                        <h2>About</h2>
+                    </header>
+                </section>
+                <hr>
+                <!-- Section 8 -->
+                <section class="main-section" id="license">
+                    <header>
+                        <h2>License</h2>
+                    </header>
+                </section>
+                <hr>
+            </main>
+        </div>
+        <!-- Footer -->
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-areas: 
+    "h h"
+    "n m"
+    "f f";
+}
+
+#h-container {
+    grid-area: h;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    color: ghostwhite;
+    background-color: #563D7C;
+}
+
+#h-container img {
+    align-self: center;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#h-container h1 {
+    margin: auto;
+}
+
+#n-container {
+    grid-area: n;
+    position: fixed;
+    top: 70px;
+    overflow-y: scroll;
+    width: 260px;
+    height: 100%;
+    border-right: 2px solid #563D7C;
+
+}
+
+#m-container {
+    grid-area: m;
+    position: fixed;
+    top: 75px;
+    left: 260px;
+    bottom: 40px;
+    width: auto;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 20px;
+    overflow-y: scroll !important;
+}
+
+pre {
+    padding: 10px;
+    background: whitesmoke;
+    max-height: auto;
+    max-width: 600px;
+    width: auto;
+    clear: both;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px;
+}
