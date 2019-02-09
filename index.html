@@ -193,14 +193,72 @@
                         thus are not
                         bound by a media query. The remaining breakpoints, however, do include a breakpoint
                         abbreviation.</p>
-                    <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and
-                        <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
+                    <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code>
+                        and
+                        <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>,
+                        and <code>xl</code>.</p>
+                    <p>Where <em>property</em> is one of:</p>
+                    <ul>
+                        <li><code>m</code> - for classes that set <code>margin</code></li>
+                        <li><code>p</code> - for classes that set <code>padding</code></li>
+                    </ul>
+                    <p>Where <em>sides</em> is one of:</p>
+                    <ul>
+                        <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
+                        <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
+                        <li><code>l</code> - for classes that set <code>margin-left</code> or <code>padding-left</code></li>
+                        <li><code>r</code> - for classes that set <code>margin-right</code> or <code>padding-right</code></li>
+                        <li><code>x</code> - for classes that set both <code>* -left</code> and <code>* -right</code></li>
+                        <li><code>y</code> - for classes that set both <code>* -top</code> and <code>* -bottom</code></li>
+                        <li>blank - for classes that set a <code>margin</code> or a <code>padding</code> on all 4 sides
+                            of the element</li>
+                    </ul>
+                    <p>Where <em>size</em> is one of:</p>
+                    <ul>
+                        <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code>
+                            by setting it to <code>0</code></li>
+                        <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code>
+                            to <code>$spacer * .25</code></li>
+                        <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code>
+                            to <code>$spacer * .5</code></li>
+                        <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code>
+                            to <code>$spacer</code></li>
+                        <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code>
+                            to <code>$spacer * 1.5</code></li>
+                        <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code>
+                            to <code>$spacer * 3</code></li>
+                        <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+                    </ul>
+                    <p>(You can add more sizes by adding entries to the <code>$spacers</code> Sass map variable.)</p>
                 </section>
                 <!-- Section 6 -->
                 <section class="main-section" id="icons">
                     <header>
                         <h2>Icons</h2>
                     </header>
+                    <p>Bootstrap doesn’t include an icon library by default, but we have a handful of recommendations
+                        for you to choose from. While most icon sets include multiple file formats, we prefer SVG
+                        implementations for their improved accessibility and vector support.</p>
+                    <h4>Preferred</h4>
+                    <p>We’ve tested and used these icon sets ourselves. </p>
+                    <ul>
+                        <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+                        <li><a href="https://github.com/iconic/open-iconic" target="_blank">Iconic</a></li>
+                        <li><a href="https://octicons.github.com/" target="_blank">Octicons</a></li>
+                    </ul>
+                    <h4>More Options</h4>
+                    <p>While we haven’t tried these out, they do look promising and provide multiple formats—including
+                        SVG. </p>
+                    <ul>
+                        <li><a href="https://github.com/danklammer/bytesize-icons" target="_blank">Bytesize</a></li>
+                        <li><a href="https://material.io/tools/icons/?style=baseline" target="_blank">Google Material Icons</a></li>
+                        <li><a href="https://ionicons.com/" target="_blank">Ionicons</a></li>
+                        <li><a href="https://feathericons.com/" target="_blank">Feather</a></li>
+                        <li><a href="http://demo.amitjakhu.com/dripicons/" target="_blank">Dripicons</a></li>
+                        <li><a href="http://ikons.piotrkwiatkowski.co.uk/" target="_blank">Ikons</a></li>
+                        <li><a href="https://glyph.smarticons.co/" target="_blank">Glyph</a></li>
+                        <li><a href="https://icons8.com/" target="_blank">Icons8</a></li>
+                    </ul>
                 </section>
                 <!-- Section 7 -->
                 <section class="main-section" id="about">
